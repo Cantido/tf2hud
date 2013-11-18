@@ -1778,20 +1778,21 @@
 	}
 	"MvMScoreboard"
 	{
-	"ControlName"		"CTFHudMannVsMachineScoreboard"
-	"fieldName"			"MvMScoreboard"
-	"xpos"				"60"
-	"ypos"				"10"
-	"zpos"				"10"
-	"wide"				"f0"
-	"tall"				"480"
-	"visible"			"0"
-	"enabled"			"1"
+		"ControlName"		"CTFHudMannVsMachineScoreboard"
+		"fieldName"			"MvMScoreboard"
+		"xpos"				"60"
+		"ypos"				"10"
+		"zpos"				"10"
+		"wide"				"f0"
+		"tall"				"480"
+		"visible"			"0"
+		"enabled"			"1"
 		
-	"verbose"			"1"
+		"verbose"			"1"
 		
-	if_mvm
-	{
-		"visible"		"1"
+		if_mvm
+		{
+			"visible"		"1"
+		}
 	}
 }
