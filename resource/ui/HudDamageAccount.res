@@ -7,10 +7,10 @@
 		"text_y"				"0"
 		"delta_item_end_y"		"0"
 		"PositiveColor"			"144 223 23 255"
-		"NegativeColor"			"255 255 0 255"		
-		"delta_lifetime"		"2"
-		"delta_item_font"		"chippyBold18OL"
-		"delta_item_font_big"		"chippyBold18OL"
+		"NegativeColor"			"Damage Numbers"		
+		"delta_lifetime"		"1.5"
+		"delta_item_font"		"kbnblack12OL"
+		"delta_item_font_big"		"kbnblack12OL"
 	}
 	"DamageAccountValue"
 	{
@@ -27,8 +27,8 @@
 		"enabled"		"1"
 		"labelText"		"%metal%"
 		"textAlignment"	"center"
-		"font"			"chippyMedium12"
-		"fgcolor_override"			"255 255 0 255"		
+		"font"			"kbnMedium12"
+		"fgcolor_override"			"Damage Numbers"	
 	}
 	"DamageAccountValueShadow"
 	{
@@ -45,6 +45,6 @@
 		"enabled"		"1"
 		"labelText"		"%metal%"
 		"textAlignment"	"center"
-		"font"			"chippyMedium12"
+		"font"			"kbnMedium12"
 	}
 }
