@@ -4,8 +4,8 @@
 	{
 		"ControlName"		"CWaveStatusPanel"
 		"fieldName"			"WaveStatusPanel"
-		"xpos"				"-60"
-		"ypos"				"8"
+		"xpos"				"c-300"
+		"ypos"				"-22"
 		"zpos"				"0"
 		"wide"				"600"
 		"tall"				"67"
@@ -15,17 +15,19 @@
 		"verbose"			"1"
 	}
 	
+	
 	"PopFileLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PopFileLabel"
-		"font"			"kbnBold10"
+		"font"			"Heavy16"
 		"labelText"		"%popfile%"
-		"textAlignment"		"east"
-		"xpos"			"235"
-		"ypos"			"350"
-		"wide"			"240"
-		"tall"			"20"
+		"textAlignment"	"west"
+		"xpos"          "c-247" 
+        "ypos"          "c-74" 
+        "zpos"          "15"
+        "wide"          "287"
+        "tall"          "18"
 		"fgcolor"		"White"
 	}
 
@@ -34,36 +36,38 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"DifficultyContainer"
 		"xpos"			"0"
-		"ypos"			"130"
-		"wide"			"480"
-		"tall"			"60"
+		"ypos"			"-82"
+		"wide"			"f0"
+		"tall"			"480"
 		"visible"		"1"
 		
 		"DifficultyLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"DifficultyLabel"
-			"font"			"kbnBold16"
+			"font"			"Medium10"
 			"labelText"		"#TF_MvM_Difficulty"
-			"textAlignment"	"center"
-			"xpos"			"0"
-			"ypos"			"-5"
-			"wide"			"480"
-			"tall"			"20"
-			"fgcolor"		"White"
+			"textAlignment"	"West"
+			"xpos"          "4" 
+            "ypos"          "457" 
+            "zpos"          "2"
+            "wide"          "287"
+            "tall"          "12"
+			"fgcolor"		"Blank"
 		}
 		
 		"DifficultyValue"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"DifficultyValue"
-			"font"			"kbnBold10"
+			"font"			"Heavy16"
 			"labelText"		"%difficultyvalue%"
-			"textAlignment"	"center"
-			"xpos"			"0"
-			"ypos"			"9"
-			"wide"			"480"
-			"tall"			"15"
+			"textAlignment"	"east"
+			"xpos"          "c9" 
+            "ypos"          "c8" 
+            "zpos"          "2"
+            "wide"          "268"
+            "tall"          "18"
 			"fgcolor"		"White"
 		}
 	}
@@ -72,60 +76,49 @@
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"PlayerListBackground"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"0"
+		"xpos"			"100"
+		"ypos"			"-65"
+		"zpos"			"-1"
 		"wide"			"0"
 		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/tournament_panel_brown"
 		
-		"scaleImage"		"0"
+		"scaleImage"		"1"
 		
 		"src_corner_height"	"22"				// pixels inside the image
 		"src_corner_width"	"22"
 	
-		"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"0"	
+		"draw_corner_width"	"5"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"5"	
 	}
 	
 	"MvMPlayerList"
 	{
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"MvMPlayerList"
-		"xpos"			"0"
-		"ypos"			"150"
-		"wide"			"480"
-		"tall"			"150"
+		"xpos"			"c-250"
+		"ypos"			"c-57"
+		"wide"			"530"
+		"tall"			"155"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"autoresize"	"3"
-		"linespacing"	"14"
+		"linespacing"	"24"
 		"textcolor"		"White"
 	}
-	"MvMPlayerListBackground"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"MvMPlayerListBackground"
-		"xpos"			"0"
-		"ypos"			"150"
-		"zpos"			"-1"
-		"wide"			"480"
-		"tall"			"95"
-		"visible"		"1"
-		"bgcolor_override"		"0 0 0 175"
-	}
+	
 	"CreditStatsContainer"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CreditStatsContainer"
 		"xpos"			"0"
-		"ypos"			"230"
-		"wide"			"480"
-		"tall"			"205"
+		"ypos"			"0"
+		"wide"			"f0"
+		"tall"			"480"
 		"visible"		"1"
 		
 		"CreditStatsBackground"
@@ -134,44 +127,43 @@
 			"fieldName"		"CreditStatsBackground"
 			"xpos"			"0"
 			"ypos"			"0"
-			"zpos"			"0"
-			"wide"			"0"
-			"tall"			"0"
+			"zpos"			"-1"
+			"wide"			"400"
+			"tall"			"135"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
-			"enabled"		"0"
+			"enabled"		"1"
 			"image"			"../HUD/tournament_panel_brown"
 
 			"src_corner_height"	"22"				// pixels inside the image
 			"src_corner_width"	"22"
 		
-			"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"draw_corner_width"	"5"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"5"	
 		}
 		
 		"CreditsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"CreditsLabel"
-			"font"			"kbnMedium14"
+			"font"			"Default"
 			"labelText"		"#TF_PVE_Currency"
 			"textAlignment" "north-west"
-			"xpos"			"0"
+			"xpos"			"8"
 			"ypos"			"18"
 			"wide"			"200"
-			"fgcolor"		"White"
+			"fgcolor"		"Blank"
 		}
 		
 		"PreviousWaveCreditInfoPanel"
 		{
 			"ControlName"	"CCreditDisplayPanel"
 			"fieldName"		"PreviousWaveCreditInfoPanel"
-			"xpos"			"0"
-			"ypos"			"30"
-			"wide"			"235"
-			"tall"			"60"
-			"wide"			"240"
+			"xpos"			"c-250"
+			"ypos"			"r165"
+			"tall"			"100"
+			"wide"			"200"
 			"visible"		"1"
 		}
 		
@@ -179,11 +171,10 @@
 		{
 			"ControlName"	"CCreditDisplayPanel"
 			"fieldName"		"TotalGameCreditInfoPanel"
-			"xpos"			"245"
-			"ypos"			"30"
-			"wide"			"235"
-			"tall"			"60"
-			"wide"			"235"
+			"xpos"			"c90"
+			"ypos"			"r165"
+			"tall"			"100"
+			"wide"			"200"
 			"visible"		"1"
 		}
 		
@@ -191,11 +182,10 @@
 		{
 			"ControlName"	"CCreditSpendPanel"
 			"fieldName"		"PreviousWaveCreditSpendPanel"
-			"xpos"			"0"
-			"ypos"			"75"
-			"wide"			"235"
-			"tall"			"60"
-			"wide"			"235"
+			"xpos"			"c-160"
+			"ypos"			"r165"
+			"tall"			"100"
+			"wide"			"200"
 			"visible"		"1"
 		}
 		
@@ -203,25 +193,24 @@
 		{
 			"ControlName"	"CCreditSpendPanel"
 			"fieldName"		"TotalGameCreditSpendPanel"
-			"xpos"			"245"
-			"ypos"			"75"
-			"wide"			"235"
-			"tall"			"60"
-			"wide"			"235"
+			"xpos"			"c180"
+			"ypos"			"r165"
+			"tall"			"100"
+			"wide"			"200"
 			"visible"		"1"
 		}
-	}	
-	"RespecStatusLabel"
-    {
-        "ControlName"    "CExLabel"
-        "fieldName"      "RespecStatusLabel"
-        "font"           "HudFontSmall"
-        "labelText"      "%respecstatus%"
-        "textAlignment"   "north-west"
-        "xpos"            "180"
-        "ypos"                        "8"
-        "wide"                        "220"
-        "tall"                        "40"
-        "fgcolor"                "tanlight"
+        "RespecStatusLabel"     //Refund progress
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"RespecStatusLabel"
+			"font"			"Medium10"
+			"labelText"		"%respecstatus%"
+			"textAlignment" "center"
+			"xpos"			"c-150"
+			"ypos"			"28"
+			"wide"			"300"
+			"tall"			"20"
+			"fgcolor"		"White"
+		}
 	}
 }

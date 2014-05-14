@@ -11,9 +11,9 @@
 		"ypos"			"0"
 		"wide"			"300"
 		"tall"			"15"
-		"fgcolor"		"white"
+		"fgcolor"		"Blank"
 	}
-	
+		
 	"TableBackground"
 	{
 		"ControlName"	"EditablePanel"
@@ -22,92 +22,86 @@
 		"ypos"			"14"
 		"zpos"			"-1"
 		"wide"			"190"
-		"tall"			"40"
-		"visible"		"1"
-		"bgcolor_override"		"20 20 20 175"
+		"tall"			"42"
+		"visible"		"0"
+		"bgcolor_override"		"20 20 20 50"
 	}
 	
 	"UpgradesLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"UpgradesLabel"
-		"font"			"HudFontSmall"
+		"font"			"Medium10"
 		"labelText"		"#TF_PVE_Upgrades"
 		"textAlignment" "north-west"
 		"xpos"			"10"
-		"ypos"			"15"
+		"ypos"			"34"
 		"wide"			"70"
-		"tall"			"20"
-		"fgcolor"		"white"
+		"fgcolor"		"White"
 	}
 	
 	"UpgradesCountLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"UpgradesCountLabel"
-		"font"			"HudFontSmallbold"
+		"font"			"Medium10"
 		"labelText"		"%upgrades%"
 		"textAlignment" "north-east"
-		"xpos"			"90"
-		"ypos"			"15"
-		"wide"			"40"
-		"tall"			"20"
-		"fgcolor"		"white"
+		"xpos"			"63"
+		"ypos"			"34"
+		"wide"			"30"
+		"fgcolor"		"White"
 	}
 	
 	"BuyBackLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BuyBackLabel"
-		"font"			"HudFontSmall"
+		"font"			"Medium10"
 		"labelText"		"#TF_PVE_Buybacks"
 		"textAlignment" "north-west"
 		"xpos"			"10"
-		"ypos"			"27"
+		"ypos"			"44"
 		"wide"			"70"
-		"tall"			"20"
-		"fgcolor"		"white"
+		"fgcolor"		"White"
 	}
 	
 	"BuyBackCountLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BuyBackCountLabel"
-		"font"			"HudFontSmallbold"
+		"font"			"Medium10"
 		"labelText"		"%buybacks%"
 		"textAlignment" "north-east"
-		"xpos"			"90"
-		"ypos"			"27"
-		"wide"			"40"
-		"tall"			"20"
-		"fgcolor"		"white"
+		"xpos"			"63"
+		"ypos"			"44"
+		"wide"			"30"
+		"fgcolor"		"White"
 	}
 	
 	"BottleLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BottleLabel"
-		"font"			"HudFontSmall"
+		"font"			"Medium10"
 		"labelText"		"#TF_PVE_Bottles"
 		"textAlignment" "north-west"
 		"xpos"			"10"
-		"ypos"			"39"
+		"ypos"			"54"
 		"wide"			"70"
-		"tall"			"20"
-		"fgcolor"		"white"
+		"fgcolor"		"White"
 	}
 	
 	"BottleCountLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BottleCountLabel"
-		"font"			"HudFontSmallbold"
+		"font"			"Medium10"
 		"labelText"		"%bottles%"
 		"textAlignment" "north-east"
-		"xpos"			"90"
-		"ypos"			"39"
-		"wide"			"40"
-		"tall"			"20"
-		"fgcolor"		"white"
+		"xpos"			"63"
+		"ypos"			"54"
+		"wide"			"30"
+		"fgcolor"		"White"
 	}
 }

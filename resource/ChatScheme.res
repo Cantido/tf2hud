@@ -17,10 +17,10 @@ Scheme
 	{
 		// base colors
 		"White"				"255 255 255 255"
-		"OffWhite"			"216 216 216 255"
-		"DullWhite"			"142 142 142 255"
-		"Orange"			"255 155 0 255"
-		"TransparentBlack"		"0 0 0 128"
+		"OffWhite"			"255 255 255 255"
+		"DullWhite"			"214 214 214 255"
+		"Orange"			"214 214 214 255"
+		"TransparentBlack"		"54 54 54 255"
 		"Black"				"0 0 0 255"
 
 		"Blank"				"0 0 0 0"
@@ -33,9 +33,9 @@ Scheme
 	BaseSettings
 	{
 		// vgui_controls color specifications
-		Border.Bright					"200 200 200 196"	// the lit side of a control
-		Border.Dark						"40 40 40 196"		// the dark/unlit side of a control
-		Border.Selection				"0 0 0 196"			// the additional border color for displaying the default/selected button
+		Border.Bright					"200 200 200 0"		// the lit side of a control
+		Border.Dark						"40 40 40 0"		// the dark/unlit side of a control
+		Border.Selection				"0 0 0 0"			// the additional border color for displaying the default/selected button
 
 		Button.TextColor				"White"
 		Button.BgColor					"Blank"
@@ -60,21 +60,19 @@ Scheme
 
 		"Chat.TypingText"		"White"
 
-		Frame.TitleTextInsetX			16
-		Frame.ClientInsetX				8
-		Frame.ClientInsetY				6
-		Frame.BgColor					"160 160 160 128"	[$WIN32]
-		Frame.BgColor					"80 80 80 192"		[$X360]
-		Frame.OutOfFocusBgColor			"160 160 160 32"	[$WIN32]
-		Frame.OutOfFocusBgColor			"80 80 80 192"		[$X360]
+		Frame.TitleTextInsetX			0
+		Frame.ClientInsetX				0
+		Frame.ClientInsetY				0
+		Frame.BgColor					"0 0 0 214"
+		Frame.OutOfFocusBgColor			"0 0 0 57"
 		Frame.FocusTransitionEffectTime	"0.3"	// time it takes for a window to fade in/out on focus/out of focus
 		Frame.TransitionEffectTime		"0.3"	// time it takes for a window to fade in/out on open/close
 		Frame.AutoSnapRange				"0"
-		FrameGrip.Color1				"200 200 200 196"
-		FrameGrip.Color2				"0 0 0 196"
-		FrameTitleButton.FgColor		"200 200 200 196"
+		FrameGrip.Color1				"200 200 200 0"
+		FrameGrip.Color2				"0 0 0 0"
+		FrameTitleButton.FgColor		"200 200 200 255"
 		FrameTitleButton.BgColor		"Blank"
-		FrameTitleButton.DisabledFgColor	"255 255 255 192"
+		FrameTitleButton.DisabledFgColor	"255 255 255 255"
 		FrameTitleButton.DisabledBgColor	"Blank"
 		FrameSystemButton.FgColor		"Blank"
 		FrameSystemButton.BgColor		"Blank"
@@ -84,7 +82,7 @@ Scheme
 		FrameTitleBar.Font				"DefaultLarge"	[$WIN32]
 		FrameTitleBar.TextColor			"White"
 		FrameTitleBar.BgColor			"Blank"
-		FrameTitleBar.DisabledTextColor	"255 255 255 192"
+		FrameTitleBar.DisabledTextColor	"255 255 255 255"
 		FrameTitleBar.DisabledBgColor	"Blank"
 
 		GraphPanel.FgColor				"White"
@@ -103,11 +101,11 @@ Scheme
 		ListPanel.BgColor					"TransparentBlack"
 		ListPanel.SelectedTextColor			"Black"
 		ListPanel.SelectedBgColor			"Orange"
-		ListPanel.SelectedOutOfFocusBgColor	"255 155 0 128"
+		ListPanel.SelectedOutOfFocusBgColor	"0 0 0 214"
 		ListPanel.EmptyListInfoTextColor	"OffWhite"
 
 		Menu.TextColor					"White"
-		Menu.BgColor					"160 160 160 64"
+		Menu.BgColor					"0 0 0 214"
 		Menu.ArmedTextColor				"Black"
 		Menu.ArmedBgColor				"Orange"
 		Menu.TextInset					"6"
@@ -132,15 +130,15 @@ Scheme
 
 		ScrollBar.Wide					17
 
-		ScrollBarButton.FgColor				"White"
+		ScrollBarButton.FgColor				"Blank"	//buttons invis
 		ScrollBarButton.BgColor				"Blank"
-		ScrollBarButton.ArmedFgColor		"White"
+		ScrollBarButton.ArmedFgColor		"Blank"
 		ScrollBarButton.ArmedBgColor		"Blank"
-		ScrollBarButton.DepressedFgColor	"White"
+		ScrollBarButton.DepressedFgColor	"Blank"
 		ScrollBarButton.DepressedBgColor	"Blank"
 
 		ScrollBarSlider.FgColor				"Blank"			// nob color
-		ScrollBarSlider.BgColor				"255 255 255 64"	// slider background color
+		ScrollBarSlider.BgColor				"Blank"	// slider background color
 
 		SectionedListPanel.HeaderTextColor	"White"
 		SectionedListPanel.HeaderBgColor	"Blank"
@@ -151,11 +149,11 @@ Scheme
 		SectionedListPanel.SelectedTextColor			"Black"
 		SectionedListPanel.SelectedBgColor				"Orange"
 		SectionedListPanel.OutOfFocusSelectedTextColor	"Black"
-		SectionedListPanel.OutOfFocusSelectedBgColor	"255 155 0 128"
+		SectionedListPanel.OutOfFocusSelectedBgColor	"0 0 0 214"
 
-		Slider.NobColor				"108 108 108 255"
-		Slider.TextColor			"180 180 180 255"
-		Slider.TrackColor			"31 31 31 255"
+		Slider.NobColor				"Blank"
+		Slider.TextColor			"Blank"
+		Slider.TrackColor			"Blank"
 		Slider.DisabledTextColor1	"117 117 117 255"
 		Slider.DisabledTextColor2	"30 30 30 255"
 
@@ -166,7 +164,7 @@ Scheme
 		TextEntry.DisabledBgColor	"Blank"
 		TextEntry.SelectedTextColor	"Black"
 		TextEntry.SelectedBgColor	"Orange"
-		TextEntry.OutOfFocusSelectedBgColor	"255 155 0 128"
+		TextEntry.OutOfFocusSelectedBgColor	"54 54 54 255"
 		TextEntry.FocusEdgeColor	"0 0 0 196"
 
 		ToggleButton.SelectedTextColor	"White"
@@ -187,7 +185,7 @@ Scheme
 		MainMenu.MenuItemHeight		"16"	[$WIN32]
 		MainMenu.MenuItemHeight		"32"	[$X360]
 		MainMenu.Inset				"32"
-		MainMenu.Backdrop			"0 0 0 156"
+		MainMenu.Backdrop			"54 54 54 255"
 
 		Console.TextColor			"OffWhite"
 		Console.DevTextColor		"White"
@@ -196,7 +194,7 @@ Scheme
 		NewGame.FillColor			"0 0 0 255"
 		NewGame.SelectionColor		"Orange"	[$WIN32]
 		NewGame.SelectionColor		"0 0 0 255"	[$X360]
-		NewGame.DisabledColor		"128 128 128 196"
+		NewGame.DisabledColor		"128 128 128 255"
 
 		TFColors.ChatTextYellow		"251 235 202 255"
 		TFColors.ChatTextTeamBlue	"153 204 255 255"
@@ -222,7 +220,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Arial"
+				"name"		"Verdana"
 				"tall"		"12"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
@@ -230,7 +228,7 @@ Scheme
 			}
 			"2"
 			{
-				"name"		"Arial"
+				"name"		"Verdana"
 				"tall"		"13"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
@@ -238,7 +236,7 @@ Scheme
 			}
 			"3"
 			{
-				"name"		"Arial"
+				"name"		"Verdana"
 				"tall"		"14"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
@@ -247,7 +245,7 @@ Scheme
 			}
 			"4"
 			{
-				"name"		"Arial"
+				"name"		"Verdana"
 				"tall"		"16"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
@@ -256,7 +254,7 @@ Scheme
 			}
 			"5"
 			{
-				"name"		"Arial"
+				"name"		"Verdana"
 				"tall"		"20"
 				"weight"	"0"
 				"range"		"0x0000 0x017F"
@@ -316,45 +314,45 @@ Scheme
 			"1"
 			{
 				"name"		"Verdana"
-				"tall"		"13"	[$WIN32]
+				"tall"		"12"	[$WIN32]
 				"tall"		"15"	[$X360]
-				"weight"	"900"
+				"weight"	"700"
 				"yres"		"480 599"
 				"dropshadow"	"1"
 			}
 			"2"
 			{
 				"name"		"Verdana"
-				"tall"		"13"	[$WIN32]
+				"tall"		"14"	[$WIN32]
 				"tall"		"17"	[$X360]
-				"weight"	"900"
+				"weight"	"700"
 				"yres"		"600 767"
 				"dropshadow"	"1"
 			}
 			"3"
 			{
 				"name"		"Verdana"
-				"tall"		"13"	[$WIN32]
+				"tall"		"15"	[$WIN32]
 				"tall"		"18"	[$X360]
-				"weight"	"900"
+				"weight"	"700"
 				"yres"		"768 1023"
 				"dropshadow"	"1"
 			}
 			"4"
 			{
 				"name"		"Verdana"
-				"tall"		"14"	[$WIN32]
+				"tall"		"17"	[$WIN32]
 				"tall"		"20"	[$X360]
-				"weight"	"900"
+				"weight"	"700"
 				"yres"		"1024 1199"
 				"dropshadow"	"1"
 			}
 			"5"
 			{
 				"name"		"Verdana"
-				"tall"		"15"	[$WIN32]
+				"tall"		"22"	[$WIN32]
 				"tall"		"25"	[$X360]
-				"weight"	"900"
+				"weight"	"700"
 				"yres"		"1200 10000"
 				"dropshadow"	"1"
 			}
@@ -379,17 +377,17 @@ Scheme
 		FrameBorder
 		{
 			// rounded corners for frames
-			"backgroundtype" "2"
+			"backgroundtype" "0"
 		}
 
 		DepressedBorder
 		{
-			"inset" "0 0 1 1"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -398,7 +396,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "1 0"
 				}
 			}
@@ -407,7 +405,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -416,19 +414,19 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
 		}
 		RaisedBorder
 		{
-			"inset" "0 0 1 1"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -437,7 +435,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -446,7 +444,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 1"
 				}
 			}
@@ -455,7 +453,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -478,13 +476,13 @@ Scheme
 
 		ScrollBarButtonBorder
 		{
-			"inset" "2 2 0 0"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -492,8 +490,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -501,7 +499,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -510,7 +508,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -518,13 +516,13 @@ Scheme
 		
 		ScrollBarButtonDepressedBorder
 		{
-			"inset" "2 2 0 0"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -532,8 +530,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -541,7 +539,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -550,7 +548,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -558,13 +556,13 @@ Scheme
 
 		TabBorder
 		{
-			"inset" "0 0 1 1"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -572,8 +570,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -581,7 +579,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -590,12 +588,12 @@ Scheme
 
 		TabActiveBorder
 		{
-			"inset" "0 0 1 0"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -604,8 +602,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -613,7 +611,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -623,12 +621,12 @@ Scheme
 
 		ToolTipBorder
 		{
-			"inset" "0 0 1 0"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -637,8 +635,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -646,7 +644,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -655,7 +653,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -664,7 +662,7 @@ Scheme
 		// this is the border used for default buttons (the button that gets pressed when you hit enter)
 		ButtonKeyFocusBorder
 		{
-			"inset" "0 0 1 1"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
@@ -674,8 +672,8 @@ Scheme
 				}
 				"2"
 				{
-					"color" "Border.Bright"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 			Top
@@ -687,8 +685,8 @@ Scheme
 				}
 				"2"
 				{
-					"color" "Border.Bright"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 			Right
@@ -700,8 +698,8 @@ Scheme
 				}
 				"2"
 				{
-					"color" "Border.Dark"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 			Bottom
@@ -713,7 +711,7 @@ Scheme
 				}
 				"2"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -721,13 +719,13 @@ Scheme
 
 		ButtonDepressedBorder
 		{
-			"inset" "2 1 1 1"
+			"inset" "0 0 0 0"
 			Left
 			{
 				"1"
 				{
-					"color" "Border.Dark"
-					"offset" "0 1"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -735,8 +733,8 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
-					"offset" "1 0"
+					"color" "Blank"
+					"offset" "0 0"
 				}
 			}
 
@@ -744,7 +742,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Dark"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}
@@ -753,7 +751,7 @@ Scheme
 			{
 				"1"
 				{
-					"color" "Border.Bright"
+					"color" "Blank"
 					"offset" "0 0"
 				}
 			}

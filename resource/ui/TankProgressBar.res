@@ -17,11 +17,11 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"TankImage"
-		"xpos"			"2"
+		"xpos"			"0"
 		"ypos"			"-2"
 		"zpos"			"3"
-		"wide"			"22"
-		"tall"			"22"
+		"wide"			"18"
+		"tall"			"18"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/leaderboard_class_tank"
@@ -32,14 +32,14 @@
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"ProgressBar"
-		"xpos"			"30"
+		"xpos"			"26"
 		"ypos"			"4"
 		"zpos"			"1"
-		"wide"			"152"
-		"tall"			"10"
+		"wide"			"140"
+		"tall"			"8"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../HUD/tournament_panel_blu"
+		"image"			"replay/thumbnails/meter"
 		
  		"src_corner_height"	"22"				// pixels inside the image
  		"src_corner_width"	"22"
@@ -47,24 +47,41 @@
  		"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
  		"draw_corner_height" 	"0"	
 	}
+
+	"MainBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"MainBG"
+		"xpos"			"26"
+		"ypos"			"4"
+		"zpos"			"-1"
+		"wide"			"140"
+		"tall"			"8"
+		"fillcolor"		"ya_HudBG"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+
+	}
 	
 	"ProgressBarBG"
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"ProgressBarBG"
-		"xpos"			"30"
-		"ypos"			"4"
+		"xpos"			"33"
+		"ypos"			"3"
 		"zpos"			"1"
-		"wide"			"152"
-		"tall"			"10"
-		"visible"		"1"
+		"wide"			"137"
+		"tall"			"12"
+		"visible"		"0"
 		"enabled"		"1"
-		"image"			"../hud/color_panel_brown"
+		"image"			"../HUD/tournament_panel_tan"
 		
 		"src_corner_height"	"22"				// pixels inside the image
 		"src_corner_width"	"22"
 	
-		"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"0"	
+		"draw_corner_width"	"5"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"5"	
 	}
 }

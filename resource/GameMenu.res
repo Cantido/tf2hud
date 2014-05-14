@@ -2,125 +2,131 @@
 {
 	"QuickplayButton"
 	{
-		"label" "START PLAYING" 
+		"label" "2" 
 		"command" "quickplay"
-		"subimage" "glyph_server"
 		"OnlyAtMenu" "1"
+         "tooltip" "Quick play"
 	}
 	"QuickplayChangeButton"
 	{
-		"label" "NEW GAME" 
+		"label" "2" 
 		"command" "quickplay"
-		"subimage" "glyph_server"
 		"OnlyInGame" "1"
+        "tooltip" "Quick play"
 	}
 	"PlayPVEButton"
 	{
-		"label" "PLAY COOP" 
+		"label" "Coop" 
 		"command" "playpve"
-		"subimage" "glyph_coop"
 		"OnlyAtMenu" "1"
 	}
 	"ServerBrowserButton"
 	{
-		"label" "BROWSE SERVERS" 
+		"label" "Play" 
 		"command" "OpenServerBrowser"
-		"subimage" "glyph_server_browser"
 		"OnlyAtMenu" "1"
-	} 
-	"ChangeServerButton"
-	{
-		"label" "CHANGE SERVER" 
-		"command" "OpenServerBrowser"
-		"subimage" "glyph_server_browser"
-		"OnlyInGame" "1"
 	}
 	"ReplayBrowserButton"
 	{
-		"label" "#GameUI_GameMenu_ReplayDemos"
+		"label" "p"
 		"command" "engine replay_reloadbrowser"
-		"subimage" "glyph_tv"
+        "tooltip" "Replays"
 	}
 	"SteamWorkshopButton"
 	{
-		"label" "WORKSHOP"
+		"label" "#MMenu_SteamWorkshop"
 		"command" "engine OpenSteamWorkshopDialog"
-		"subimage" "glyph_steamworkshop"
 	}
-	"KBNHudButton"
-    {
-        "command" "engine play vo/sniper_domination03"
-        "label" "                         "
-    }
-	"TrainingButton"
+	"ConsoleButton"
 	{
-		"label" "#TF_TRAINING"
-		"command" "offlinepractice"
-		"subimage" "glyph_practice"
-		"OnlyAtMenu" "1"
+		"label" "Console" 
+		"command" "engine con_enable 1;toggleconsole"
+	} 
+	"DEMOUI"
+	{
+		"label" "Demos"
+		"command" "engine demoui"
 	}
-	
-	// These buttons get positioned by the MainMenuOverride.res	
-	"CreateServerButton"
+	"ToggleScoreboard"
 	{
-		"label" "Create Server"
-		"command" "OpenCreateMultiplayerGameDialog"
+		"label" "n"    
+		"command" "engine toggle cl_hud_minmode"
+        "tooltip" "Toggle scoreboard"
+	}
+	"HomeServer"
+	{
+		"label" "7"
+		"command" "engine Home"
+        "tooltip" "Favorite server"
+	}
+	"QuitButton"
+	{
+		"label" "Quit"
+		"command" "engine replay_confirmquit"
 		"OnlyAtMenu" "1"
-		"tooltip" "Create Server"
 	}
 	"GeneralStoreButton"
 	{
-		"label" "#MMenu_Shop"
+		"label" "Store"
 		"command" "engine open_store"
-		"subimage" "glyph_store"
-	}	
+	}
 	"CharacterSetupButton"
 	{
-		"label" "#MMenu_CharacterSetup"
+		"label" "Items"
 		"command" "engine open_charinfo"
-		"subimage" "glyph_items"
 	}
-
+    "AchievementsButton"
+	{
+		"label"			"B"
+		"command"		"OpenAchievementsDialog"
+        "tooltip" "Achievements"
+	}
+    "AdvOptionsButton"
+	{
+		"label"		"@"
+		"command"	"opentf2options"
+		"tooltip"   "Advanced options"
+	}
 	// These buttons are only shown while in-game
-	// and also are positioned by the .res file
+   
+   "ChangeServerButton"
+	{
+		"label" "Play" 
+		"command" "OpenServerBrowser"
+		"OnlyInGame" "1"
+	}
 	"ResumeGameButton"
 	{
-		"label"			"RESUME GAME"
+		"label"			"Resume"
 		"command"		"ResumeGame"
 		"OnlyInGame"	"1"
-		"subimage" "icon_resume"
+	}
+	"DisconnectButton"
+	{
+		"label" "Leave"
+		"command" "engine disconnect"
+		"OnlyInGame"	"1"
 	}
 	"CallVoteButton"
 	{
-		"label"			""
+		"label"			"$"
 		"command"		"callvote"
 		"OnlyInGame"	"1"
-		"subimage" "icon_checkbox"
-		"tooltip" "#MMenu_CallVote"
+		"tooltip" "Call vote"
 	}
 	"MutePlayersButton"
 	{
-		"label"			""
+		"label"			"9"
 		"command"		"OpenPlayerListDialog"
 		"OnlyInGame"	"1"
-		"subimage" "glyph_muted"
-		"tooltip" "#MMenu_MutePlayers"
+        "tooltip" "Mute players"
 	}
 	"RequestCoachButton"
 	{
 		"label"			""
 		"command"		"engine cl_coach_find_coach"
-		"OnlyInGame"	"1"
+		"OnlyAtMenu" "0"
 		"subimage" "icon_whistle"
 		"tooltip" "#MMenu_RequestCoach"
 	}
-	"Scoreboard"
-	{
-		"label" "Change scoreboard"
-		"command" "engine toggle cl_hud_minmode"
-		"OnlyInGame" "1"
-		"subimage"		"icon_resume"
-		"tooltip" "Change scoreboard"
-	}
 }
-

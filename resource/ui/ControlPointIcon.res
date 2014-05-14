@@ -6,9 +6,9 @@
 		"fieldName"	"ControlPointIcon"
 		"xpos"		"0"
 		"ypos"		"0"
-		"zpos"		"1"
-		"wide"		"26"
-		"tall"		"26"
+		"zpos"		"2"
+		"wide"		"24"
+		"tall"		"24"
 		"visible"	"1"
 		"enabled"	"1"
 	}
@@ -20,8 +20,8 @@
 		"xpos"		"0"
 		"ypos"		"0"
 		"zpos"		"4"
-		"wide"		"26"
-		"tall"		"26"
+		"wide"		"24"
+		"tall"		"24"
 		"visible"	"1"
 		"enabled"	"1"
 	}	
@@ -30,10 +30,10 @@
 	{
 		"ControlName"	"ImagePanel"		
 		"fieldName"	"CapPlayerImage"
-		"xpos"		"0"
+		"xpos"		"1"
 		"ypos"		"0"
 		"zpos"		"3"
-		"wide"		"9"
+		"wide"		"10"
 		"tall"		"16"
 		"visible"	"0"
 		"enabled"	"1"
@@ -45,12 +45,12 @@
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"CapNumPlayers"
-		"font"			"kbnBold14"
-		"xpos"			"7"
-		"ypos"			"-6"
+		"font"			"Medium12"
+		"xpos"			"6"
+		"ypos"			"1"
 		"zpos"			"4"
-		"wide"			"21"
-		"tall"			"36"
+		"wide"			"22"
+		"tall"			"22"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -59,15 +59,14 @@
 		"textAlignment"		"center"
 		"dulltext"		"0"
 		"brighttext"		"0"
-		"fgcolor_override"	"50 50 50 225"
 	}
 
 	"OverlayImage"
 	{
 		"ControlName"	"ImagePanel"		
 		"fieldName"	"OverlayImage"
-		"xpos"		"17"
-		"ypos"		"0"
+		"xpos"		"16"
+		"ypos"		"1"
 		"zpos"		"4"
 		"wide"		"8"
 		"tall"		"8"
@@ -76,6 +75,7 @@
 		"image"		"capture_icon"
 		"scaleImage"	"1"
 	}
+	
 	"CPTimerLabel"
 	{
 		"ControlName"	"CExLabel"
@@ -92,7 +92,7 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"wrap"			"0"
-		"font"			"ControlPointTimerSmaller"
+		"font"			"ControlPointTimer"
 	}
 				
 	"CPTimerBG"
@@ -102,8 +102,8 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"-1"
-		"wide"		"52"
-		"tall"		"26"
+		"wide"		"66"
+		"tall"		"33"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../sprites/obj_icons/icon_obj_timer"	

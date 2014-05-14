@@ -16,9 +16,9 @@
 		"tabPosition"	"0"
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"46 43 42 255"
-		"infocus_bgcolor_override" "46 43 42 255"
-		"outoffocus_bgcolor_override" "46 43 42 255"
+		"bgcolor_override"	            "ya_MenuBG"
+		"infocus_bgcolor_override"      "ya_MenuBG"
+		"outoffocus_bgcolor_override"   "ya_MenuBG"
 
 		"item_ypos"						"85"
 		"output_item_ypos"				"255"		
@@ -38,7 +38,7 @@
 			"tall"			"45"
 			"visible"		"0"
 			"bgcolor_override"		"0 0 0 0"
-			"noitem_textcolor"		"117 107 94 255"
+			"noitem_textcolor"		"117 110 110 255"
 			"PaintBackgroundType"	"2"
 			"paintborder"	"1"
 			
@@ -52,30 +52,42 @@
 			"inset_eq_x"	"2"
 			"inset_eq_y"	"2"
 			
-			"itemmodelpanel"
+			"MainContentsContainer"
 			{
-				"use_item_rendertarget" "0"
-				"allow_rot"				"0"
-			}
-			
-			"namelabel"
-			{
-				"ControlName"	"CExLabel"
-				"fieldName"		"namelabel"
+				"ControlName"	"EditablePanel"
+				"fieldName"		"MainContentsContainer"
 				"xpos"			"0"
 				"ypos"			"0"
-				"zpos"			"2"
-				"wide"			"50"
-				"tall"			"30"
-				"autoResize"	"0"
-				"pinCorner"		"0"
+				"wide"			"f0"
+				"tall"			"f0"
 				"visible"		"1"
-				"enabled"		"1"
-				"labelText"		"%itemname%"
-				"textAlignment"	"south"
-				"fgcolor"		"235 226 202 255"
-				"wrap"			"1"
-				"centerwrap"	"1"
+				"bgcolor_override"		"0 0 0 0"
+			
+				"itemmodelpanel"
+				{
+					"use_item_rendertarget" "0"
+					"allow_rot"				"0"
+				}
+				
+				"namelabel"
+				{
+					"ControlName"	"CExLabel"
+					"fieldName"		"namelabel"
+					"xpos"			"0"
+					"ypos"			"0"
+					"zpos"			"2"
+					"wide"			"50"
+					"tall"			"30"
+					"autoResize"	"0"
+					"pinCorner"		"0"
+					"visible"		"1"
+					"enabled"		"1"
+					"labelText"		"%itemname%"
+					"textAlignment"	"south"
+					"fgcolor"		"White"
+					"wrap"			"1"
+					"centerwrap"	"1"
+				}
 			}
 		}
 		
@@ -94,16 +106,16 @@
 			"centerwrap"	"0"
 			"textAlignment" "west"
 			"textinsetx"	"0"
-			"defaultFgColor_override" "117 107 94 255"
+			"defaultFgColor_override" "110 110 110 255"
 			"defaultBgColor_override" "0 0 0 0"
-			"armedFgColor_override" "235 226 202 255"
+			"armedFgColor_override" "White"
 			"armedBgColor_override" "0 0 0 0"
 			"depressedFgColor_override" "178 82 22 255"
 			"depressedBgColor_override" "0 0 0 0"
 		}
 		
 		"filter_xoffset"	"-290"
-		"filter_ypos"		"30"
+		"filter_ypos"		"45"
 		"filter_xdelta"		"10"
 		"filter_ydelta"		"10"
 		
@@ -132,19 +144,19 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ClassLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"Medium18"
 		"labelText"		"#CraftStep1"
-		"textAlignment"	"north-west"
+		"textAlignment"	"west"
 		"xpos"			"c-290"
-		"ypos"			"10"
+		"ypos"			"5"
 		"zpos"			"1"
-		"wide"			"240"
-		"tall"			"25"
+		"wide"			"340"
+		"tall"			"50"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor_override" "200 187 161 255"
+		"fgcolor_override" "White"
 	}
 	
 	"selectedrecipecontainer"
@@ -175,7 +187,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"200 187 161 255"
+			"fgcolor"		"White"
 			"wrap"			"1"
 		}
 		
@@ -195,7 +207,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"153 204 255 255"
+			"fgcolor"		"White"
 			"wrap"			"1"
 		}
 	
@@ -215,7 +227,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"117 107 94 255"
+			"fgcolor"		"110 110 110 255"
 		}
 		"OutputLabel"
 		{
@@ -233,7 +245,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"117 107 94 255"
+			"fgcolor"		"110 110 110 255"
 		}
 		
 		"CraftButton"
@@ -316,10 +328,10 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"recipecontainerscroller"
 		"xpos"			"c-290"
-		"ypos"			"70"
+		"ypos"			"82"
 		"zpos"			"5"
 		"wide"			"280"
-		"tall"			"240"
+		"tall"			"290"
 		"PaintBackgroundType"	"2"
 		"fgcolor_override"	"59 54 48 255"
 		"bgcolor_override"	"200 187 161 0"
@@ -349,29 +361,15 @@
 		"tall"			"300"
 		"visible"		"0"
 		"bgcolor_override"		"0 0 0 0"
-		"noitem_textcolor"		"117 107 94 255"
-		"PaintBackgroundType"	"0"
-		"paintborder"	"0"
+		"noitem_textcolor"		"110 110 110 255"
+		"PaintBackgroundType"	"2"
+		"paintborder"	"1"
 		
 		"text_ypos"			"20"
 		"text_center"		"1"
 		"model_hide"		"1"
 		"resize_to_text"	"1"
 		"padding_height"	"15"
-		
-		"BG"
-    	{
-    		"ControlName"			"ImagePanel"
-    		"fieldName"			"BG"
-    		"xpos"				"0"
-    		"ypos"				"0"
-    		"zpos"				"1"
-    		"wide"				"f0"
-    		"tall"	 			"f0"
-    		"visible"			"1"
-    		"enabled"			"1"
-    		"fillcolor"			"55 55 55 250"
-    	}
 		
 		"attriblabel"
 		{
@@ -387,7 +385,7 @@
 			"enabled"		"1"
 			"labelText"		"%attriblist%"
 			"textAlignment"	"center"
-			"fgcolor"		"180 170 140 255"
+			"fgcolor"		"110 110 110 255"
 			"centerwrap"	"1"
 		}
 	}
@@ -404,7 +402,7 @@
 		"tall"			"42"
 		"visible"		"0"
 		"bgcolor_override"		"0 0 0 0"
-		"noitem_textcolor"		"117 107 94 255"
+		"noitem_textcolor"		"110 110 110 255"
 		"PaintBackgroundType"	"2"
 		"paintborder"	"1"
 		
@@ -450,7 +448,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"235 226 202 255"
+			"fgcolor_override"	"White"
 			"wrap"			"1"
 			"centerwrap"	"1"
 		}

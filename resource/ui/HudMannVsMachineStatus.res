@@ -4,11 +4,11 @@
 	{
 		"ControlName"		"CWaveStatusPanel"
 		"fieldName"			"WaveStatusPanel"
-		"xpos"				"c-300"
+		"xpos"				"20"
 		"ypos"				"0"
 		"zpos"				"0"
-		"wide"				"600"
-		"tall"				"67"
+		"wide"				"f0"
+		"tall"				"480"
 		"visible"			"1"
 		"enabled"			"1"
 	}
@@ -17,8 +17,8 @@
 	{
 		"ControlName"		"CWaveCompleteSummaryPanel"
 		"fieldName"			"WaveCompleteSummaryPanel"
-		"xpos"				"c-140"
-		"ypos"				"350"
+		"xpos"				"c-125"
+		"ypos"				"120"
 		"zpos"				"0"
 		"wide"				"400"
 		"tall"				"400"
@@ -31,7 +31,7 @@
 		"ControlName"		"CMvMBossStatusPanel"
 		"fieldName"			"BossStatusPanel"
 		"xpos"				"0"
-		"ypos"				"1"
+		"ypos"				"0"
 		"zpos"				"0"
 		"wide"				"200"
 		"tall"				"100"
@@ -47,10 +47,10 @@
 	{
 		"ControlName"		"CCurrencyStatusPanel"
 		"fieldName"			"CurrencyStatusPanel"
-		"xpos"				"c-190"
-		"ypos"				"r173"
-		"wide"				"180"
-		"tall"				"100"
+		"xpos"				"0"
+		"ypos"				"0"
+		"wide"				"f0"
+		"tall"				"480"
 		"visible" 			"1"
 		"enabled" 			"1"
 	}
@@ -59,10 +59,10 @@
 	{
 		"ControlName"		"CInWorldCurrencyStatus"
 		"fieldName"			"InWorldCurrencyPanel"
-		"xpos"				"c-205"
-		"ypos"				"r160"
-		"wide"				"100"
-		"tall"				"100"
+		"xpos"				"0"
+		"ypos"				"0"
+		"wide"				"90000"
+		"tall"				"480"
 		"visible" 			"1"
 		"enabled" 			"1"
 	}
@@ -87,12 +87,12 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"UpgradeLevelContainer"
-		"xpos"			"0"
+		"xpos"			"20"
 		"ypos"			"0"
 		"wide"			"640"
 		"tall"			"480"
 		"visible"		"0"
-		
+					
 		"UpgradeProgressTrack"
 		{
 			"ControlName"	"CMvMBombCarrierProgress"
@@ -190,9 +190,9 @@
 	{
 		"ControlName"	"CMvMVictoryPanelContainer"
 		"fieldName"		"VictoryPanelContainer"
-		"xpos"			"0"	//	"-40"		//button fix
+		"xpos"			"0"
 		"ypos"			"0"
-		"wide"			"f0"	//	"800"
+		"wide"			"f0"
 		"tall"			"480"
 		"visible"		"0"
 	}
@@ -213,8 +213,7 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"ServerChangeMessage"
 		"xpos"			"0"
-		"ypos"			"42"		//	"30"
-		"zpos"			"1"
+		"ypos"			"0"
 		"wide"			"f0"
 		"tall"			"480"
 		"visible"		"0"
@@ -223,9 +222,9 @@
 		{
 			"ControlName"		"ScalableImagePanel"
 			"fieldName"		"Background"
-			"xpos"			"c-140"
-			"ypos"			"400"
-			"wide"			"280"
+			"xpos"			"c-150"
+			"ypos"			"999999"
+			"wide"			"300"
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -247,13 +246,13 @@
 			"font"			"HudFontSmall"
 			"textAlignment"	"center"
 			"labelText"		"%servermessage%"
-			"xpos"			"c-140"
+			"xpos"			"c-150"
 			"ypos"			"400"
-			"wide"			"280"
+			"wide"			"300"
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"tanlight"		
+			"fgcolor"		"White"		
 		}
 	}
 	
